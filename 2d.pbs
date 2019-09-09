@@ -1,0 +1,11 @@
+#!/bin/bash -l 
+#PBS -l walltime=05:00:00,nodes=1:ppn=16,pmem=2gb 
+module load cmake/3.9.3 qt/5.9.1 ffmpeg/2.6.2 gcc/7.2.0 ompi/3.0.0/intel-2018-release-centos7
+source /home/dhp/public/OpenFOAM/OpenFOAM-v1806/etc/bashrc
+#source /home/suo-yang/bavan005/debug-ofv6/set_env_v6
+cd $PBS_O_WORKDIR
+decomposePar -force
+mpirun -np 16  compressibleMultiphaseInterFoam  -parallel >&log.out
+#twoPhaseEulerFoam >&logs.out
+reconstructPar
+foamToVTK >& foamToVTK.out
