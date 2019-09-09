@@ -36,17 +36,17 @@ boundaryField
         type            fixedValue;
         value           uniform 293;
     }
-        lowerWall1
+        bottomoutlet
     {
         type            fixedValue;
         value           uniform 293;
     }
-        lowerWall2
+        bottominlet
     {
         type            fixedValue;
         value           uniform 293;
     }
-    atmosphere
+    topinlet
     {
         type            inletOutlet;
         phi             rhoPhi;

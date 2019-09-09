@@ -33,17 +33,17 @@ boundaryField
     {
         type            zeroGradient;
     }
-    lowerWall2
+    bottominlet
     {
         type            inletOutlet;
         inletValue      uniform 0;
         value           uniform 1;
     }
-    lowerWall1
+    bottomoutlet
     {
         type            zeroGradient;
     }
-    atmosphere
+    topinlet
     {
         type            inletOutlet;
         inletValue      uniform 1;

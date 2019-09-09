@@ -39,19 +39,19 @@ boundaryField
         thetaProperties ( ( water air ) 90 0 0 0 );
         value           uniform 0;
     }
-    lowerWall2
+    bottominlet
     {
         type            inletOutlet;
         inletValue      uniform 1;
         value           uniform 0;
     }
-    lowerWall1
+    bottomoutlet
     {
         type            alphaContactAngle;
         thetaProperties ( ( water air ) 90 0 0 0 );
         value           uniform 0;
     }
-    atmosphere
+    topinlet
     {
         type            alphaContactAngle;
         thetaProperties ( ( water air ) 90 0 0 0 );

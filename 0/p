@@ -37,18 +37,18 @@ boundaryField
         type            calculated;
         value           $internalField;
     }
-        lowerWall1
+        bottomoutlet
     {
         type            calculated;
         value           $internalField;
     }
-        lowerWall2
+        bottominlet
     {
         type            calculated;
         value           $internalField;
     }
 
-    atmosphere
+    topinlet
     {
         type            calculated;
         value           $internalField;

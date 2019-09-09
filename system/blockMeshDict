@@ -95,7 +95,7 @@ boundary
         (12 14 18 16)
         );
     }
-    lowerWall2
+    bottominlet
     {
         type wall;
         faces
@@ -105,7 +105,7 @@ boundary
 
         );
     }
-    lowerWall1
+    bottomoutlet
     {
         type wall;
         faces
@@ -113,7 +113,7 @@ boundary
             (8 10 14 12)
         );
     }
-    atmosphere
+    topinlet
     {
         type patch;
         faces

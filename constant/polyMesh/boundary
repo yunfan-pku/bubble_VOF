@@ -38,21 +38,21 @@ FoamFile
         nFaces          20;
         startFace       14030;
     }
-    lowerWall2
+    bottominlet
     {
         type            wall;
         inGroups        1(wall);
         nFaces          20;
         startFace       14050;
     }
-    lowerWall1
+    bottomoutlet
     {
         type            wall;
         inGroups        1(wall);
         nFaces          30;
         startFace       14070;
     }
-    atmosphere
+    topinlet
     {
         type            patch;
         nFaces          70;

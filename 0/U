@@ -25,13 +25,13 @@ boundaryField
     {
         type            noSlip;
     }
-    lowerWall1
+    bottomoutlet
     {
         type            pressureInletOutletVelocity;
         value           uniform (0 0 0);
 
     }
-    lowerWall2
+    bottominlet
     {
 
         type            fixedValue;//pressureInletOutletVelocity;
@@ -45,13 +45,13 @@ boundaryField
     {
         type            noSlip;
     }
-    atmosphere
+    topinlet
     {
         type            fixedValue;
         value           uniform (0 -0.2 0);
     }
     /*
-    atmosphere
+    topinlet
     {
         type            pressureInletOutletVelocity;
         value           uniform (0 0 0);

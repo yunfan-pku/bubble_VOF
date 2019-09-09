@@ -37,19 +37,19 @@ boundaryField
         type            fixedFluxPressure;
         value           $internalField;
     }
-    lowerWall1
+    bottomoutlet
     {
         type            totalPressure;
         p0              uniform 1e5;
 
     }
-    lowerWall2
+    bottominlet
     {
         type            fixedFluxPressure;
         value           $internalField;
     }
 
-    atmosphere
+    topinlet
     {
         type            fixedFluxPressure;
         value           $internalField;
